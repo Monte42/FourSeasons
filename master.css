@@ -1,0 +1,231 @@
+/* night sky  #11114E */
+/* morning sky #F78282 */
+/* evening sky  */
+/* morning sun #F87A20*/
+/* sun #FCE325 */
+/* evening sun #ff6e07 */
+/* fall spring #A6C177 */
+body{
+  margin: 0;
+  text-align: center;
+}
+.grass{
+  background-color: green;
+  height: 20vh;
+  position: relative;
+  z-index: 4;
+  animation-name: grassAnime;
+  animation-timing-function: linear;
+  animation-duration: 600s;
+  animation-iteration-count: infinite;
+}
+
+.sky{
+  background-color: skyblue;
+  height: 80vh;
+  position: relative;
+  z-index: 1;
+  animation-name: skyAnime;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.sun{
+  height: 100px;
+  width: 100px;
+  background: yellow;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  transform: scale(0);
+  animation-name: sunAnime;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-delay: 7.5s;
+  animation-iteration-count: infinite;
+}
+
+.moon{
+  height: 80px;
+  width: 80px;
+  background: white;
+  border-radius: 50%;
+  transform: scale(0);
+  position: relative;
+  z-index: 3;
+  animation-name: moonAnime;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-delay: 7.5s;
+  animation-iteration-count: infinite;
+}
+
+.one{
+  height: 7px;
+  width: 7px;
+  background-color: lightgray;
+  border-radius: 50%;
+  transform: translate(11px,15px);
+  display: inline-block;
+}
+
+.two{
+  height: 7px;
+  width: 7px;
+  background-color: gray;
+  border-radius: 50%;
+  transform: translate(23px,-17px);
+  display: inline-block;
+}
+
+.three{
+  height: 10px;
+  width: 13px;
+  background-color: lightgray;
+  border-radius: 50%;
+  transform: translate(20px,-2px);
+  display: inline-block;
+}
+
+.four{
+  height: 13px;
+  width: 15px;
+  background-color: gray;
+  border-radius: 50%;
+  transform: translate(6px,37px);
+  display: inline-block;
+}
+
+@keyframes skyAnime {
+  0%{
+    background-color: #11114E;
+  }
+  25%{
+    background-color: #11114E;
+  }
+  30%{
+    background-color: #F87A20;
+  }
+  35%{
+    background-color: skyblue;
+  }
+  67%{
+    background-color: skyblue;
+  }
+  72%{
+    background-color: #F78282;
+  }
+  78%{
+    background-color: #11114E;
+  }
+  100%{
+    background-color: #11114E;
+  }
+}
+ @keyframes grassAnime {
+   0%{
+     background-color: white;
+   }
+   25%{
+     background-color: #A6C177;
+   }
+   50%{
+     background-color: green;
+   }
+   75%{
+     background-color: #A6C177;
+   }
+   100%{
+     background-color: white;
+   }
+ }
+
+ @keyframes sunAnime {
+   0%{
+     transform: translate(0,80vh);
+     background-color: orange;
+   }
+   5%{
+     transform: translate(10vw, 60vh);
+     background-color: yellow;
+   }
+   10%{
+    transform: translate(20vw,40vh);
+   }
+   15%{
+     transform: translate(30vw,30vh);
+   }
+   20%{
+    transform: translate(40vw,25vh);
+   }
+   25%{
+     transform: translate(50vw,20vh);
+   }
+   30%{
+    transform: translate(60vw,25vh);
+   }
+   35%{
+    transform: translate(70vw,30vh);
+   }
+   40%{
+     transform: translate(80vw,40vh);
+   }
+   45%{
+     background-color: yellow;
+     transform: translate(90vw,60vh);
+   }
+   50%{
+     transform: translate(100vw,88vh);
+     background-color: #ff6e07;
+   }
+   51%{
+     transform: scale(0);
+   }
+   100%{
+     transform: scale(0);
+   }
+ }
+
+
+  @keyframes moonAnime {
+    0%{
+      transform: scale(0);
+    }
+    50%{
+      transform: scale(0);
+    }
+    51%{
+      transform: translate(0,80vh);
+    }
+    65%{
+      transform: translate(10vw,60vh);
+    }
+    60%{
+     transform: translate(20vw,40vh);
+    }
+    65%{
+      transform: translate(30vw,30vh);
+    }
+    70%{
+     transform: translate(40vw,25vh);
+    }
+    75%{
+      transform: translate(50vw,20vh);
+    }
+    80%{
+     transform: translate(60vw,25vh);
+    }
+    85%{
+      transform: translate(70vw,30vh);
+    }
+    90%{
+      transform: translate(80vw,40vh);
+    }
+    95%{
+      transform: translate(90vw,60vh);
+    }
+    100%{
+      transform: translate(100vw,80vh);
+  }
+}
